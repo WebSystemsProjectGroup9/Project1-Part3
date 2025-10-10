@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About PhishLens</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.0/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.0/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body class="light-theme">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+          <a href="Home.html" class="navbar-brand" id="navbarBrand">
+            <div class="logo-wrapper">
+                <img src="./logo.png"" alt="Image not found" class="logo"/> 
+            </div>
+              <span class="navbar-brand-text">Phish</span><span class="navbar-brand-text-light">Lens</span>
+          </a>
+          <button class="theme-toggle-button" id="themeToggle" aria-label="Toggle theme">
+              <i class="fas fa-sun" style="color: #000;"></i>
+          </button>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+              <nav class="navbar-nav ms-auto">
+              <a href="Home.html" class="nav-link" data-page="/Home.html">Home</a>
+              <a href="About.html" class="nav-link active" data-page="/About.html">About Us</a>
+              <a href="Contact.html" class="nav-link" data-page="/contact">Contact</a>
+              <a class="btn btn-primary ms-lg-2" href="/signin">Sign in</a>
+              </nav>
+          </div>
+      </div>
+    </nav>
+    <div class="py-5">
+      <div class="container py-5">
+
+        <!-- Header -->
+        <div class="text-center mb-5">
+          <h1 class="display-4 fw-bold mb-4">
+            <span>About</span> <span class="text-primary">PhishLens</span>
+          </h1>
+          <p class="fs-5 mx-auto" style="max-width: 900px;">
+            We're pioneering the future of media authenticity verification through
+            advanced AI, protecting organizations and individuals from the growing
+            threat of synthetic media.
+          </p>
+        </div>
+
+        <!-- Detection Pipeline -->
+        <section class="mb-5">
+          <h2 class="display-6 fw-bold text-center mb-5">
+            <span>Our</span> <span class="text-primary">Detection Pipeline</span>
+          </h2>
+
+          <div class="card p-4 bg-secondary bg-opacity-25 border-secondary shadow-sm">
+            <div class="card-body">
+              <div class="d-flex flex-column flex-lg-row align-items-center justify-content-between gap-4">
+                <div
+                  class="d-flex flex-column align-items-center text-center position-relative"
+                >
+                  <div
+                    class="p-3 rounded-circle bg-primary bg-opacity-25 mb-3 pipeline-step"
+                  >
+                    <i class="bi bi-globe2"></i>
+                  </div>
+                  <h3 class="fw-semibold mb-2">Social Network X</h3>
+                  <p class="small" style="max-width: 128px;">
+                    Images ingestion from various platforms
+                  </p>
+                  <i
+                    class="fa-solid fa-arrow-right text-primary opacity-75 mt-3 d-none d-lg-block position-absolute"
+                    style="right: -40px;"
+                  ></i>
+                </div>
+
+                <!-- Step 2 -->
+                  <i class="bi bi-arrow-right about-arrow-right"></i>
+                <div
+                  class="d-flex flex-column align-items-center text-center position-relative"
+                >
+                  <div
+                    class="p-3 rounded-circle bg-primary bg-opacity-25 mb-3 pipeline-step"
+                  >
+                    <i class="bi bi-eye"></i>
+                  </div>
+                  <h3 class="fw-semibold mb-2">Vision Analysis</h3>
+                  <p class="small" style="max-width: 128px;">
+                    Image processing using Google Vision API
+                  </p>
+                  <i
+                    class="fa-solid fa-arrow-right text-primary opacity-75 mt-3 d-none d-lg-block position-absolute"
+                    style="right: -40px;"
+                  ></i>
+                </div>
+
+                <!-- Step 3 -->
+                  <i class="bi bi-arrow-right about-arrow-right"></i>
+                <div
+                  class="d-flex flex-column align-items-center text-center position-relative"
+                >
+                  <div
+                    class="p-3 rounded-circle bg-primary bg-opacity-25 mb-3 pipeline-step"
+                  >
+                    <i class="bi bi-cpu"></i>
+                  </div>
+                  <h3 class="fw-semibold mb-2">Gemini API</h3>
+                  <p class="small" style="max-width: 128px;">
+                    Advanced reasoning and pattern recognition
+                  </p>
+                  <i
+                    class="fa-solid fa-arrow-right text-primary opacity-75 mt-3 d-none d-lg-block position-absolute"
+                    style="right: -40px;"
+                  ></i>
+                </div>
+
+                <!-- Step 4 -->
+                  <i class="bi bi-arrow-right about-arrow-right"></i>
+                <div
+                  class="d-flex flex-column align-items-center text-center position-relative"
+                >
+                  <div
+                    class="p-3 rounded-circle bg-primary bg-opacity-25 mb-3 pipeline-step"
+                  >
+                      <i class="bi bi-database"></i>
+                  </div>
+                  <h3 class="fw-semibold mb-2">Firestore</h3>
+                  <p class="small" style="max-width: 128px;">
+                    Secure data storage and processing
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="mb-5 text-center mission-section">
+          <div class="card bg-secondary bg-opacity-25 border-secondary shadow-sm">
+            <div class="card-body">
+              <h2 class="fs-3 fw-bold mb-4">Our Mission</h2>
+
+              <!-- Bootstrap row + order classes -->
+              <div class="d-flex flex-column flex-lg-row align-items-center justify-content-center">
+                <!-- 🖼️ Image FIRST -->
+                    <div class="mission-image order-1 order-lg-0 mb-4 mb-lg-0 me-lg-4">
+                      <img src="./about_us.png" alt="Our Mission" class="img-fluid rounded shadow" />
+                    </div>
+
+                    <!-- 📝 Text SECOND -->
+                    <div class="mission-text fs-5 text-lg-start text-center" style="line-height: 1.8; max-width: 700px;">
+                      In an era where synthetic media can be weaponized to spread misinformation, 
+                      manipulate markets, and damage reputations, <strong>PhishLens</strong> stands as a guardian of truth. 
+                      We combine cutting-edge computer vision with advanced language models to create 
+                      the most sophisticated deepfake image detection system.
+                    </div>
+                  </div>
+                </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-left">&copy;2025 PhishLens</div>
+        <div class="scroll-top btn-primary" id="scrollTopBtn">↑ Top</div>
+    </footer>
+ <script src="./Home.js"></script> 
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

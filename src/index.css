@@ -1,0 +1,22 @@
+/* Define color variables for light mode (default) */
+:root {
+  --background-color: #ffffff;
+  --text-color: #333333;
+  --button-bg: #f0f0f0;
+  --button-text: #333333;
+}
+
+/* Define color variables for dark mode */
+[data-theme='dark'] {
+  --background-color: #1a1a1a;
+  --text-color: #ffffff;
+  --button-bg: #333333;
+  --button-text: #ffffff;
+}
+
+/* Apply a smooth transition for color changes */
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}

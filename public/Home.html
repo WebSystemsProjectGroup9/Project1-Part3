@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhishLens - Spot Fake Images in Seconds</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.0/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.0/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body class="light-theme">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+        <a href="Home.html" class="navbar-brand" id="navbarBrand">
+            <div class="logo-wrapper">
+                <img src="./logo.png"" alt="Image not found" class="logo"/> 
+            </div>
+            <span class="navbar-brand-text">Phish</span><span class="navbar-brand-text-light">Lens</span>
+        </a>
+        <button class="theme-toggle-button" id="themeToggle" aria-label="Toggle theme">
+            <i class="fas fa-sun" style="color: #000;"></i>
+        </button>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <nav class="navbar-nav ms-auto">
+                <a href="Home.html" class="nav-link active" data-page="/Home.html">Home</a>
+                <a href="About.html" class="nav-link" data-page="/About.html">About Us</a>
+                <a href="Contact.html" class="nav-link" data-page="/contact">Contact</a>
+                <a class="btn btn-primary ms-lg-2" href="/signin">Sign in</a>
+            </nav>
+        </div>
+    </div>
+    </nav>
+    <!-- ✅ Hero Section -->
+    <section class="hero-section">
+    <div class="container py-5 home-container">
+        <div class="row align-items-center justify-content-center">
+        
+        <!-- 🖼️ Left Column: Image -->
+        <div class="col-lg-7 col-md-7 mb-4 mb-md-0 text-center text-md-start">
+            <img 
+            src="./heroimage.jpg" 
+            alt="AI Vision Interface" 
+            class="img-fluid rounded shadow hero-img"
+            style="max-width: 90%;"
+            >
+        </div>
+
+        <!-- 📝 Right Column: Text Content -->
+            <div class="col-lg-5 col-md-5 text-center text-md-start">
+                <h1 class="display-5 fw-bold mb-3">
+                Spot Fake Images <span class="text-primary">in Seconds</span>
+                </h1>
+                <p class="fs-5 mb-4">
+                Identify Deepfake images instantly with PhishLens using advanced Vision and AI-based detection.
+                </p>
+                <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-md-start">
+                <a href="#" class="btn btn-primary btn-lg">Try Deepfake Inspector →</a>
+                <a href="#how-it-works" class="btn btn-outline-primary btn-lg">Learn More</a>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="how-it-works" id="how-it-works">
+    <div class="container text-center">
+      <h2 class="fw-bold mb-5">How PhishLens Works</h2>
+      <div class="row g-4">
+        <div class="col-md-3 col-sm-6">
+          <div class="step">
+            <i class="bi bi-upload"></i>
+            <h5>1. Upload Image</h5>
+            <p>Start by uploading any image you want to verify. PhishLens accepts multiple formats seamlessly.</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="step">
+            <i class="bi bi-eye"></i>
+            <h5>2. Analyze</h5>
+            <p>Our AI Vision model scans the image for manipulations and deepfake patterns in real time.</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="step">
+            <i class="bi bi-cpu"></i>
+            <h5>3. Detect</h5>
+            <p>The Gemini-based model performs reasoning on detected anomalies to classify image authenticity.</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="step">
+            <i class="bi bi-check-circle"></i>
+            <h5>4. Get Results</h5>
+            <p>Receive instant, clear, and confidence-scored results to make quick, informed decisions.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+    <!-- Features Section -->
+    <section class="features-section" id="about">
+        <div class="container">
+            <h2 class="features-title">
+                <span class="light-text">Powered by</span> <span class="primary-text">Advanced AI</span>
+            </h2>
+            <div class="row g-4">
+                <!-- Feature 1 -->
+                <div class="col-md-4">
+                    <div class="card feature-card">
+                        <div class="card-body">
+                            <div class="feature-icon-container">
+                                <i class="bi bi-eye feature-icon"></i>
+                            </div>
+                            <h5 class="feature-title">Vision OCR</h5>
+                            <p class="feature-description">
+                                Advanced computer vision algorithms detect subtle inconsistencies in image metadata and pixel patterns.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="col-md-4">
+                    <div class="card feature-card">
+                        <div class="card-body">
+                            <div class="feature-icon-container">
+                                <i class="bi bi-lightning-charge feature-icon"></i>
+                            </div>
+                            <h5 class="feature-title">Visual Cues</h5>
+                            <p class="feature-description">
+                                AI-powered analysis identifies manipulation artifacts like unnatural lighting, shadows, and facial distortions.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="col-md-4">
+                    <div class="card feature-card">
+                        <div class="card-body">
+                            <div class="feature-icon-container">
+                                <i class="bi bi-shield-check feature-icon"></i>
+                            </div>
+                            <h5 class="feature-title">LLM Reasoning</h5>
+                            <p class="feature-description">
+                                Large language models provide contextual analysis and confidence scoring for comprehensive detection.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-left">© 2025 PhishLens</div>
+        <div class="scroll-top btn-primary" id="scrollTopBtn">↑ Top</div>
+    </footer>
+    <script src="./Home.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
